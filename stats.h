@@ -9,32 +9,86 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.h
+ * @brief Interface for stats.c
  *
- * <Add Extended Description Here>
- *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author John Keeling
+ * @date 04/27/2023
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+/**
+ * @brief  A function that prints the statistics of an array including minimum, maximum, mean, and median.
+ *
+ * @param mean mean value of array
+ * @param median median value of array
+ * @param minimum minimum value of array
+ * @param maximum maximum value of array
+ * 
+ * @return void 
+ */
+void print_statistics(unsigned char mean, unsigned char median, unsigned char minimum, unsigned char maximum);
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief  Given an array of data and a length, prints the array to the screen
+ * 
+ * @param numbers Array of number
+ * @param count size of number array
  *
- * <Add Extended Description Here>
- *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @return void 
  */
+void print_array(unsigned char* numbers, unsigned int count);
 
+/**
+ * @brief  Given an array of data and a length, returns the median value
+ * 
+ * @param numbers Array of number
+ * @param count size of number array
+ *
+ * @return void 
+ */
+unsigned char find_median(unsigned char* numbers, unsigned int count);
+
+/**
+ * @brief  Given an array of data and a length, returns the mean value
+ * 
+ * @param numbers Array of number
+ * @param count size of number array
+ *
+ * @return void 
+ */
+unsigned char find_mean(unsigned char* numbers, unsigned int count);
+
+/**
+ * @brief  Given an array of data and a length, returns the maximum value
+ * 
+ * @param numbers Array of number
+ * @param count size of number array
+ *
+ * @return void 
+ */
+unsigned char find_maximum(unsigned char* numbers, unsigned int count);
+
+/**
+ * @brief  Given an array of data and a length, returns the minimum value
+ * 
+ * @param numbers Array of number
+ * @param count size of number array
+ *
+ * @return void 
+ */
+unsigned char find_minimum(unsigned char* numbers, unsigned int count);
+
+/**
+ * @brief  Given an array of data and a length, sort the array from largest to smallest
+ * 
+ * @param numbers Array of number
+ * @param count size of number array
+ *
+ * @return void 
+ */
+void sort_array(unsigned char* numbers, unsigned int count);
 
 #endif /* __STATS_H__ */
