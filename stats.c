@@ -161,14 +161,14 @@ static void swap(unsigned char* numA, unsigned char* numB ) {
 /* ---------------------------------------------------------------- */
 
 void sort_array(unsigned char* numbers, unsigned int count) {
-    int i, j, min_idx;
+    int i, j, max_idx;
   
     for (i = 0; i < count - 1; i++) {
-        min_idx = i;
+        max_idx = i;
         for (j = i + 1; j < count; j++)
-            if (numbers[j] < numbers[min_idx])
-                min_idx = j;
+            if (numbers[j] > numbers[max_idx])
+                max_idx = j;
   
-        swap(&numbers[min_idx], &numbers[i]);
+        swap(&numbers[max_idx], &numbers[i]);
     }
 }
