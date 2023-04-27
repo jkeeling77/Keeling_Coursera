@@ -27,7 +27,7 @@
  * @param minimum minimum value of array
  * @param maximum maximum value of array
  * 
- * @return void 
+ * @return void
  */
 void print_statistics(unsigned char mean, unsigned char median, unsigned char minimum, unsigned char maximum);
 
@@ -37,7 +37,7 @@ void print_statistics(unsigned char mean, unsigned char median, unsigned char mi
  * @param numbers Array of number
  * @param count size of number array
  *
- * @return void 
+ * @return void
  */
 void print_array(unsigned char* numbers, unsigned int count);
 
@@ -47,7 +47,7 @@ void print_array(unsigned char* numbers, unsigned int count);
  * @param numbers Array of number
  * @param count size of number array
  *
- * @return void 
+ * @return unsigned char
  */
 unsigned char find_median(unsigned char* numbers, unsigned int count);
 
@@ -67,7 +67,7 @@ unsigned char find_mean(unsigned char* numbers, unsigned int count);
  * @param numbers Array of number
  * @param count size of number array
  *
- * @return void 
+ * @return unsigned char
  */
 unsigned char find_maximum(unsigned char* numbers, unsigned int count);
 
@@ -77,7 +77,7 @@ unsigned char find_maximum(unsigned char* numbers, unsigned int count);
  * @param numbers Array of number
  * @param count size of number array
  *
- * @return void 
+ * @return unsigned char
  */
 unsigned char find_minimum(unsigned char* numbers, unsigned int count);
 
@@ -87,7 +87,7 @@ unsigned char find_minimum(unsigned char* numbers, unsigned int count);
  * @param numbers Array of number
  * @param count size of number array
  *
- * @return void 
+ * @return void
  */
 void sort_array(unsigned char* numbers, unsigned int count);
 
